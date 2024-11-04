@@ -1,0 +1,123 @@
+.reviews {
+    background-color: rgb(246, 192, 153);
+}
+
+.container-reviews {
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid rgba(61, 58, 58, 0.2);
+    max-width: 1200px;
+    /* Задаємо максимальну ширину для контейнера */
+    padding: 20px;
+}
+
+.reviews-title {
+    color: black;
+    font-family: "Inter Tight";
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.swiper-reviews {
+    margin-bottom: 32px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    /* Гнучкий контейнер для слайдів */
+    gap: 16px;
+    /* Додаємо простір між картками */
+}
+
+/* Ваші стилі для карток з більшою специфічністю */
+.swiper-reviews .review-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 24px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-right: 16px;
+    background-color: rgb(249, 221, 200);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 180px;
+    /* Фіксована висота для карток */
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-reviews .review-card {
+        width: calc((100% - 16px) / 2);
+        /* Дві картки в ряд */
+        height: 200px;
+        /* Залишаємо фіксовану висоту */
+        overflow: auto;
+        /* Дозволяємо прокрутку */
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .swiper-reviews .review-card {
+        width: calc((100% - 48px) / 4);
+        /* Чотири картки в ряд */
+        height: 250px;
+        /* Фіксована висота для десктопів */
+        overflow: auto;
+        /* Дозволяємо прокрутку */
+    }
+}
+
+
+.review-card-couple {
+    text-align: center;
+}
+
+.person-name {
+    font-weight: bold;
+}
+
+.review-text {
+    margin-top: 10px;
+    overflow-y: auto;
+    /* Дозволити вертикальну прокрутку для тексту */
+    flex-grow: 1;
+    /* Дозволяє тексту займати залишковий простір */
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-prev,
+.button-next {
+    background-color: transparent;
+    border: 1px solid rgba(22, 22, 22, 0.2);
+    border-radius: 60px;
+    width: 52px;
+    height: 52px;
+    padding: 14px;
+    cursor: pointer;
+    /* Зміна курсору на вказівник */
+}
+
+@media screen and (min-width: 768px) {
+
+    .button-prev,
+    .button-next {
+        width: 68px;
+        height: 68px;
+        padding: 18px;
+    }
+}
+
+.button-prev.disabled,
+.button-next.disabled {
+    opacity: 0.5;
+    /* Зменшити непрозорість кнопок */
+    pointer-events: none;
+    /* Вимкнути події миші для кнопок */
+}
