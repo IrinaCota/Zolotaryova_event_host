@@ -1,10 +1,6 @@
 /* Phone devices */
 .hero-section {
-  margin: 0 auto;
-  background-color: rgb(246, 192, 153);
- /* position: relative;
-  overflow: hidden;
-  text-align: center;*/
+  margin: 10px auto;
 }
 
 .container {
@@ -13,9 +9,16 @@
   margin: 0 auto;
 }
 
+.hero-container {
+  background-color: bisque;
+  border-radius: 20px;
+}
 .hero-image {
   width: 100%;
   height: auto;
+}
+
+.hero-text {
 }
 
 /* Tablet devices */
@@ -31,7 +34,6 @@
     height: 400px;
     object-fit: cover;
     border-radius: 4px;
-   
   }
 }
 
@@ -39,11 +41,13 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1140px;
-    padding: 60px;
   }
-
+.hero-container {
+  display:flex;
+}
   .hero-image {
     width: 100%;
     height: 600px;
+    opacity: 70%;
   }
 }
