@@ -12,37 +12,13 @@
     <script type="module" src="/main.js"></script>
   </head>
   <body>
-    <div id="header"></div>
-    <div id="hero"></div>
-    <div id="advert"></div>
-    <div id="benefits"></div>
-    <div id="gallery"></div>
-    <div id="about"></div>
-    <div id="reviews"></div>
-    <div id="footer"></div>
-
-    <script>
-      // Функція для завантаження HTML в елемент за допомогою Fetch API
-      function loadHTML(elementId, url) {
-        fetch(url)
-          .then((response) => response.text())
-          .then((html) => {
-            document.getElementById(elementId).innerHTML = html;
-          })
-          .catch((err) => {
-            console.warn("Помилка завантаження: ", err);
-          });
-      }
-
-      // Завантаження частин контенту
-      loadHTML("header", "./src/partials/header.html");
-      loadHTML("hero", "./src/partials/hero.html");
-      loadHTML("advert", "./src/partials/advert.html");
-      loadHTML("benefits", "./src/partials/benefits.html");
-      loadHTML("gallery", "./src/partials/gallery.html");
-      loadHTML("about", "./src/partials/about.html");
-      loadHTML("reviews", "./src/partials/reviews.html");
-      loadHTML("footer", "./src/partials/footer.html");
-    </script>
+    <load src="./src/partials/header.html" />
+    <load src="./src/partials/hero.html" />
+    <load src="./src/partials/advert.html" />
+    <load src="./src/partials/benefits.html" />
+    <load src="./src/partials/gallery.html" />
+    <load src="./src/partials/about.html" />
+    <load src="./src/partials/reviews.html" />
+    <load src="./src/partials/footer.html" />
   </body>
 </html>
