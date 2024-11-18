@@ -1,8 +1,13 @@
 .advert {
     margin: 0;
-    border-top: 1px solid rgba(61, 58, 58, 0.2);
-    border-bottom: 1px solid rgba(61, 58, 58, 0.2);
-    background-color: rgb(246, 192, 153);
+    background-image:linear-gradient(rgba(246, 230, 247, 0.8),
+            rgba(246, 230, 247, 0.8)
+        ), url(../img/hands.jpg);
+    background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+border-top: 1px solid rgba(72, 72, 72, 0.6);
+    border-bottom: 1px solid rgba(72, 72, 72, 0.6);
 }
 
 .advert-title {
@@ -11,8 +16,9 @@
     text-transform: uppercase;
     overflow: hidden;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.4;
+    color: rgb(56, 10, 100);
 }
 
 
@@ -25,7 +31,7 @@
 
 @media screen and (min-width: 1280px) {
     .advert-title {
-        font-size: 59px;
+        font-size: 60px;
         line-height: 1.08;
     }
 }
@@ -38,7 +44,7 @@
 
     white-space: nowrap;
     animation: running-line;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }

@@ -1,12 +1,14 @@
 .reviews {
-    background-color: rgb(246, 192, 153);
+    background-image: linear-gradient(to right,
+                rgb(234, 181, 233),
+                rgba(169, 69, 173, 0.7));
 }
-
 .container-reviews {
-    margin: 0;
+    margin: 0 auto;
     display: block;
     border-bottom: 1px solid rgba(61, 58, 58, 0.2);
     padding: 20px;
+    max-width: 1260px;
 }
 
 .reviews-title {
@@ -34,7 +36,7 @@
     border-radius: 20px;
     border: 1px solid black;
     margin-right: 16px;
-    background-color: rgb(249, 221, 200);
+    background-color: rgb(249, 241, 229);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     height: 250px;

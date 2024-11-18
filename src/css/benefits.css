@@ -1,67 +1,94 @@
 .benefits-section {
-    margin: 10px auto;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(61, 58, 58, 0.2);
+background-image: linear-gradient(to right,
+      rgb(240, 225, 239),
+      rgba(190, 108, 193, 0.7))
 }
 
+
 .benefits-container {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  max-width: 1260px;
 }
 
 .container-benefits {
-    display: flex;
+  display: flex;
 }
 
+.benefits-title {
+  width: 100%;
+  margin-bottom: 32px;
+  color: rgba(64, 38, 38, 0.4);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}
+
+.benefits-span-title {
+  color: rgba(2, 1, 1, 0.4);
+  font-weight: bold;
+}
+.container-benefits {
+    width: 100%;
+}
 .benefits-list {
-display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .benefits-item {
-
+  background-color:rgb(244, 235, 220);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0;
 }
 
 .benefits-list-title {
-
-}
-.benefits-description {
-
+  text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-    .benefits-list {
-        display: inline-flex;
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 16px;
-    }
 
-   .benefits-item {}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1158px) {
+  .benefits-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .benefits-title {
+    width: 30%;
+  }
 
-   .benefits-list-title {}
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    gap: 16px;
+    
+  }
 
-   .benefits-description {}
-}
+  .benefits-item {
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    
+  }
 
-@media screen and (min-width: 1440px) {
-    .container {
-        display: flex;
-        align-items: flex-start;
-        gap: 412px;
-    }
+  .benefits-item:hover {
+    transform: translateY(-5px);
+  }
 
-    .container-benefits-with-button {
-        width: 680px;
-        flex-direction: column;
-        gap: 64px;
-    }
-
-    .item-benefits {
-        width: 332px;
-    }
-
-    .description-benefits {
-        letter-spacing: -0.5px;
-    }
+  .benefits-list-title {
+      text-align: left;
+  }
 }

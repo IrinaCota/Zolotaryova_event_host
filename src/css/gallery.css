@@ -1,0 +1,21 @@
+.gallery-section {
+    background-color: rgb(249, 241, 229);
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.gallery-hidden {
+    display: none;
+}
+
+.content-gallery {
+ max-width: 1260px;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.marquee,
+.marquee-inner {
+ list-style: none;
+}

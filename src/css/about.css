@@ -1,43 +1,43 @@
 .about-me {
-    background-color: rgb(246, 192, 153);
+    max-width: 1260px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(61, 58, 58, 0.2);
 }
 
 .about-header {
     font-size: 28px;
     font-weight: 500;
     line-height: 1.14;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
     .about-header {
         font-size: 48px;
         line-height: 1.12;
-        margin-bottom: 50px;
     }
 }
 
 .about-photo {
     flex-shrink: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     max-width: 100%;
+    
 }
 
-@media only screen and (min-width: 768px) {
-    .about-photo {
-        margin-bottom: 50px;
-    }
-}
 
 @media only screen and (min-width: 1280px) {
     .about-photo {
         margin: 0;
+        object-position: center;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 4px;
     }
 }
 
 .about-p {
-    display: flex;
-    flex-wrap: wrap;
+     
     justify-content: center;
     gap: 20px;
 }
@@ -46,42 +46,19 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
-
     width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-    .about-text {
-        font-size: 16px;
-        line-height: 1.25;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .about-p {
-        gap: 40px;
-        padding-right: 104px;
-    }
-
-    .about-text {
-        width: calc((100% - 40px) / 2);
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .about-p {
-        gap: 20px;
-        padding: 0;
-    }
-
-    .about-text {
-        width: calc((100% - 20px) / 2);
-    }
-}
 
 @media only screen and (min-width: 1280px) {
     .about-desk {
         display: flex;
-        gap: 40px;
-    }
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 1260px;
+        margin: 0 auto;
+    } 
+
+   
 }
