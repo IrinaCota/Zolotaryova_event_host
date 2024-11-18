@@ -8,12 +8,12 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
-    root: 'src',
+    root: '.', // Встановлюємо корінь проекту на головну папку
     build: {
       sourcemap: true,
 
       rollupOptions: {
-        input: sync('./src/*.html'), // Використовуємо sync з імпортованого glob
+        input: sync('./*.html'), // Тепер ми вказуємо, що основний HTML файл в корені
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
@@ -23,8 +23,12 @@ export default defineConfig(({ command }) => {
           entryFileNames: 'commonHelpers.js',
         },
       },
-      outDir: '../dist',
+      outDir: './dist',
     },
-    plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    plugins: [injectHTML(), FullReload(['./index.html'])], // Додаємо слідкування за змінами в index.html
+
+    server: {
+      open: '/index.html', // Це відкриє index.html при старті серверу
+    },
   };
 });

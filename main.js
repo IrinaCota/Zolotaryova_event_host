@@ -5,6 +5,6 @@
 //import './js/header';
 //import './js/mob-modal';
 //import './js/projects';
-import './js/reviews';
+import './src/js/reviews';
 //import './js/scroll-to-top';
 //import './js/theme-picker';
