@@ -1,7 +1,8 @@
 .reviews {
-    background-image: linear-gradient(to right,
-                rgb(234, 181, 233),
-                rgba(169, 69, 173, 0.7));
+    min-width: 382px;
+        background-image: linear-gradient(to right,
+                rgb(237, 233, 237),
+                rgba(206, 140, 208, 0.7));
 }
 .container-reviews {
     margin: 0 auto;
@@ -73,6 +74,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 }
 
 .button-prev,
@@ -101,3 +103,8 @@
     opacity: 0.5;
     pointer-events: none;
     }
+
+        .icon-arrow-right2,
+        .icon-arrow-left2 {
+            fill: rgba(57, 52, 63, 0.8);
+        }

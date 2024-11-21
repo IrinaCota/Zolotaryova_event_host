@@ -6,5 +6,5 @@
 //import './js/mob-modal';
 //import './js/projects';
 import './src/js/reviews';
-//import './js/scroll-to-top';
+import './src/js/scroll-to-top';
 //import './js/theme-picker';

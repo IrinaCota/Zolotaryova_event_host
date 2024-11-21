@@ -11,14 +11,33 @@
           />
         </div>
       </a>
-
-      <ul class="list-links">
-        <li><a class="links" href="./about.html">About me</a></li>
-        <li><a class="links" href="./benefits.html">Benefits</a></li>
-        <li><a class="links" href="./gallery.html">Gallery</a></li>
-        <li><a class="links" href="./reviews.html">Reviews</a></li>
-        <li><a class="links" href="./">contacts</a></li>
-      </ul>
     </nav>
+    <div class="menu-box-list">
+      <div class="menu-tab-div">
+        <button class="menu-tab">Menu</button>
+      </div>
+
+      <div class="menu is-hidden">
+        <ul class="menu-list">
+          <li><a class="links" href="#about">About</a></li>
+          <li><a class="links" href="#benefits">Benefits</a></li>
+          <li><a class="links" href="#gallery">Gallery</a></li>
+          <li><a class="links" href="#reviews">Reviews</a></li>
+          <li><a class="links" href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="btn-box">
+        <button
+          class="menu-mob-btn"
+          aria-label="menu burger button"
+          data-menu-open
+          type="button"
+        >
+          <svg class="icon_burger">
+            <use href="/src/img/symbol-defs.svg#icon-th-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </header>
