@@ -11,15 +11,15 @@ import './src/js/scroll-to-top';
 
 document.addEventListener('DOMContentLoaded', () => {
   const partials = {
-    header: './src/partials/header.html',
-    hero: './src/partials/hero.html',
-    advert: './src/partials/advert.html',
-    benefits: './src/partials/benefits.html',
-    gallery: './src/partials/gallery.html',
-    about: './src/partials/about.html',
-    reviews: './src/partials/reviews.html',
-    footer: './src/partials/footer.html',
-    'scroll-to-top': './src/partials/scroll-to-top.html',
+    header: '/src/partials/header.html',
+    hero: '/src/partials/hero.html',
+    advert: '/src/partials/advert.html',
+    benefits: '/src/partials/benefits.html',
+    gallery: '/src/partials/gallery.html',
+    about: '/src/partials/about.html',
+    reviews: '/src/partials/reviews.html',
+    footer: '/src/partials/footer.html',
+    'scroll-to-top': '/src/partials/scroll-to-top.html',
   };
 
   Object.entries(partials).forEach(([id, url]) => {
