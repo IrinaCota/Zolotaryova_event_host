@@ -1,30 +1,30 @@
-const openModalBtn = document.querySelector('.menu-mob-btn');
-const closeModalBtn = document.querySelector('.close_menu_btn');
-const listMenuItem = document.querySelector('.mob-menu-list');
-const btnOrder = document.querySelector('.order-btn-menu');
+document.addEventListener('DOMContentLoaded', () => {
+  const openModalBtn = document.querySelector('.menu-mob-btn');
+  const closeModalBtn = document.querySelector('.close_menu_btn');
+  const modal = document.querySelector('[data-modal]');
+  const menuLinks = modal?.querySelectorAll('.mob-menu-anchor');
 
-const modal = document.querySelector('[data-modal]');
+  if (openModalBtn && closeModalBtn && modal) {
+    // Відкрити/закрити меню
+    openModalBtn.addEventListener('click', () => {
+      modal.classList.remove('is-hidden');
+      document.documentElement.classList.add('is-modal-open');
+    });
 
-openModalBtn.addEventListener('click', toggleModal);
-closeModalBtn.addEventListener('click', toggleModal);
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.add('is-hidden');
+      document.documentElement.classList.remove('is-modal-open');
+    });
 
-function toggleModal(event) {
-  if (event.target === closeModalBtn || event.target === listMenuItem) {
-    modal.classList.add('is-hidden');
-  } else modal.classList.toggle('is-hidden');
-  document.documentElement.classList.toggle('is-modal-open');
-}
-
-listMenuItem.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    modal.classList.add('is-hidden');
-  });
+    // Закривати меню при натисканні на посилання
+    if (menuLinks) {
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          modal.classList.add('is-hidden');
+          document.documentElement.classList.remove('is-modal-open');
+        });
+      });
+    }
+  }
 });
 
-btnOrder.addEventListener('click', orderBtnAncor);
-function orderBtnAncor(event) {
-  if (event.currentTarget === btnOrder) {
-    modal.classList.add('is-hidden');
-  }
-  return;
-}

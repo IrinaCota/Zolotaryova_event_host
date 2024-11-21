@@ -13,6 +13,8 @@
     transform: translateX(100%);
 }
 
+
+
 .mob-menu {
     position: fixed;
     top: 0;
@@ -26,14 +28,8 @@
     width: 100%;
     height: 100%;
     padding-top: 29px;
-    background-image: var(--mobile-hero-bg-webP-1x);
+    
     transition: all 300ms;
-}
-
-@media (min-resolution: 192dpi) {
-    .mob-menu {
-        background-image: var(--mobile-hero-bg-webP-2x);
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -104,24 +100,3 @@
     transition: font-size 250ms, border 250ms;
 }
 
-.order-btn-menu {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 60px;
-    padding: 18px 24px;
-    width: 163px;
-    height: 55px;
-    background: var(--accent);
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: -0.02em;
-    color: #fafafa;
-
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: border 250ms;
-}
