@@ -1,14 +1,14 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './', // Використовуйте відносний базовий шлях
+  base: '/zolotaryova-event-host/', 
   build: {
     outDir: './dist',
     rollupOptions: {
       input: './index.html',
     },
   },
-  publicDir: 'public', // Вказує на папку зі статичними файлами
+  publicDir: 'partials', 
   server: {
     open: '/index.html',
   },
